@@ -1,0 +1,2 @@
+(()=>{console.log("h");frappe.ui.toolbar.Toolbar=class extends frappe.ui.toolbar.Toolbar{setup_awesomebar(){frappe.boot.desk_settings.search_bar&&frappe.call({method:"demo11.api.check_search_bar_per",args:{user:frappe.session.user},callback:e=>{e.message?new frappe.search.AwesomeBar().setup("#navbar-search"):$("#navbar-search").prop("hidden",!0)}}),frappe.model.can_read("RQ Job")&&frappe.search.utils.make_function_searchable(function(){frappe.set_route("List","RQ Job")},__("Background Jobs"))}};})();
+//# sourceMappingURL=demo11.bundle.4SOEDTRV.js.map
